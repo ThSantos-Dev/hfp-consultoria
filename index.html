@@ -15,7 +15,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -28,12 +30,27 @@
           />
         </div>
 
-        <nav>
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          <nav>
+            <a data-nav-item="a" href="#quem-somos">quem somos</a>
+            <a data-nav-item="a" href="#diferencias">diferenciais</a>
+            <a data-nav-item="a" href="#consultorias">consultoria</a>
+            <a data-nav-item="a" href="#contato">contato</a>
+          </nav>
+        </div>
+      </div>
+
+        <!-- <nav>
           <a href="#quem-somos">quem somos</a>
           <a href="#diferencias">diferenciais</a>
           <a href="#consultoria">consultoria</a>
           <a href="#contato">contato</a>
-        </nav>
+        </nav> -->
       </div>
     </header>
     <!-- // Header -->
@@ -418,7 +435,7 @@
               <!-- Img -->
               <div class="social-media-image">
                 <a href="">
-                  <img src="assets/imgs/whatsapp.png" alt="icon-whatsapp" />
+                  <i class="fa-brands fa-whatsapp"></i>
                 </a>
               </div>
               <!-- Img -->
@@ -435,22 +452,19 @@
               <!-- Images -->
               <div class="social-media-image">
                 <a href="">
-                  <img
-                    src="assets/imgs/facebook-icon.png"
-                    alt="icon-facebook"
-                  />
+                  <i class="fa-brands fa-facebook"></i>
                 </a>
               </div>
 
               <div class="social-media-image">
                 <a href="">
-                  <img src="assets/imgs/instagram.png" alt="icon-instagram" />
+                  <i class="fa-brands fa-instagram"></i>
                 </a>
               </div>
 
               <div class="social-media-image">
                 <a href="">
-                  <img src="assets/imgs/linkedin.png" alt="icon-linkedin" />
+                  <i class="fa-brands fa-linkedin"></i>
                 </a>
               </div>
               <!-- // Images -->

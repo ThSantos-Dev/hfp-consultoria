@@ -9,6 +9,10 @@
     font-style: italic;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgba(243, 243, 243, 25%)
 
@@ -23,18 +27,17 @@ body {
 }
 
 .section-title {
+    font-size: clamp(1.3rem, 3vw, 1.75rem);
     text-align: center;
     text-transform: uppercase;
 
-    font-size: 2.25rem;
 
     margin-bottom: 80px;
 }
 
 img {
     width: inherit;
-    height: inherit;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 a {
@@ -66,15 +69,19 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: 80px;
 }
 
 .logo {
-    width: 150px;  
+    width: clamp(100px, 10vw, 150px);  
 
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 
 header nav {
+    flex: 1;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -83,7 +90,7 @@ header nav {
 }
 
 header nav a {
-    font-size: 1.375rem;
+    font-size: clamp(0.8rem, 2vw, 1.375rem);
     color: #ffffff;
     text-transform: uppercase;
 
@@ -124,7 +131,7 @@ header nav a:hover {
 .introduction-text{
     max-width: 600px;
     
-    font-size: 1.75rem;
+    font-size: clamp(1rem, 2vw, 1.75rem);
     color: #000000;
 
     margin-bottom: 60px;
@@ -141,7 +148,7 @@ header nav a:hover {
 }
 
 #btnContato {
-    font-size: 1.9rem;
+    font-size: clamp(1.rem, 3vw,1.9rem);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     text-transform: uppercase;
@@ -153,8 +160,17 @@ header nav a:hover {
     background-color: #0D56A9;
 }
 
+#btnContato:hover {
+    cursor: pointer;
+
+    color: #0D56A9;
+
+    border: 1px solid #0D56A9;
+    background-color: #f3f3f3;
+}
+
 .introduction-image-container {
-    width: 470px;
+    width: clamp(200px, 400px, 470px);
 
     padding-bottom: 50px;
 }
@@ -174,7 +190,7 @@ header nav a:hover {
 }
 
 .quem-somos-image-container {
-    width: 530px;
+    width: clamp(300px, 15vw, 430px);
 }
 
 .quem-somos-content-text {
@@ -185,7 +201,7 @@ header nav a:hover {
 
 .quem-somos-content-text p{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     line-height: 32px;
 
     margin-bottom: 20px;
@@ -200,7 +216,7 @@ header nav a:hover {
 
     display: block;
 
-    font-size: 1.675rem;
+    font-size: clamp(1rem, 2vw, 1.675rem);
     font-weight: 600;
     text-align: center;
 }
@@ -208,6 +224,8 @@ header nav a:hover {
 
 /* Missão, Visão e Valores */
 #missao-visao-valores{
+    padding: 60px 0px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +241,7 @@ header nav a:hover {
 }
 
 #missao-visao-valores .container > h1{
-    font-size: 2.25rem;
+    font-size: clamp(1.4rem, 3vw, 2.25rem);
     margin: 0px 0px 30px 0px;
 }
 
@@ -239,7 +257,7 @@ header nav a:hover {
 }
 
 .mis-vis-val-text-container > h2 {
-    font-size: 1.75rem;
+    font-size: clamp(1rem, 3vw, 1.75rem);
     text-transform: lowercase;
 
     margin-bottom: 15px;
@@ -251,7 +269,7 @@ header nav a:hover {
 }
 
 .mis-vis-val-text-container > p {
-    font-size: 1.375rem;
+    font-size: clamp(1rem, 2vw, 1.375rem)
 }
 /* // Missão, Visão e Valores */
 
@@ -273,7 +291,7 @@ header nav a:hover {
 }
 
 .card {
-    max-width: 430px;
+    max-width: 400px;
 
     padding: 20px;
     padding-bottom: 80px;
@@ -298,7 +316,7 @@ header nav a:hover {
 }
 
 .card-title h2{
-    font-size: 1.625rem;
+    font-size: clamp(1.2rem, 2vw, 1.625rem);
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
@@ -309,7 +327,7 @@ header nav a:hover {
 }
 
 .card-text {
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 2vw, 1.6rem);
     text-align: center;
 }
 
@@ -354,7 +372,7 @@ header nav a:hover {
 }
 
 .form-container label {
-    font-size: 1.625rem;
+    font-size: clamp(1rem, 2vw, 1.625rem);
 
     margin-bottom: 10px;
 }
@@ -362,7 +380,7 @@ header nav a:hover {
 .form-container input {
     height: 50px;
 
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     text-indent: 15px;
 
     border-radius: 10px;
@@ -372,7 +390,7 @@ header nav a:hover {
     width: 100%;
     min-height: 300px;
 
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     line-height: 1.375rem;
 
     resize: none;
@@ -390,7 +408,7 @@ header nav a:hover {
 }
 
 #btnSolicitarContato {
-    font-size: 1.625rem;  
+    font-size: clamp(0.7rem, 2vw, 1.625rem);  
     text-transform: uppercase;  
     color: #ffffff;
     
@@ -413,6 +431,8 @@ footer {
     display: flex;
     justify-content: space-between;
 
+    gap: 60px;
+
     padding-top: 25px;
     margin-bottom: 205px;
 }
@@ -432,13 +452,13 @@ footer {
 }
 
 .footer-logo span {
-    font-size: 1.375rem;
+    font-size: clamp(1rem, 2vw, 1.375rem);
     text-transform: uppercase;
     color: #ffffff;
 }
 
 .footer-contact h2, .footer-social-medias h2, footer a{
-    font-size: 1.375rem;
+    font-size: clamp(0.7rem, 2vw, 1.375rem);
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
@@ -468,10 +488,8 @@ footer {
     flex-direction: column;
 }
 
-.social-media-image {
-    width: 60px;
-    height: 60px;
-
+.social-media-image i {
+    font-size: clamp(1.7rem, 5vw, 3.6rem);
 }
 
 .footer-social-medias-imgs {
@@ -488,7 +506,7 @@ footer {
 }
 
 .copyright span{
-    font-size: 1.375rem;
+    font-size: clamp(0.7rem, 2vw, 1.375rem);
     font-weight: 400;
     color: #ffffff;
 }
@@ -502,3 +520,162 @@ footer {
 }
 
 /* // Footer */
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+    .footer-logo img{
+        width: 150px;
+    }
+
+    .quem-somos-content-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quem-somos-content-text {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .introduction-image-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    header nav {
+        display: none;
+    }
+
+    .introduction-text-container {
+        padding: 30px;
+    }
+
+    .mis-vis-val-content-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mis-vis-val-text-container {
+        max-width: 100%;
+    }
+
+    .footer-content-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        margin-bottom: 80px;
+    }
+
+    .footer-social-medias-imgs {
+        justify-content: center;
+    }
+
+    .one,
+    .two,
+    .three {
+        height: 5px;
+        width: 100%;
+
+        margin: 6px auto;
+
+        background-color: #fff;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+
+        cursor: pointer;
+    }
+
+    /* Menu Fullscreen */
+    .menu-section.on {
+        width: 100vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+
+        background-color: #052243;
+    }
+
+    .menu-section.on nav {
+        display: flex;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on  nav {
+        height: 100%;
+
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 50px;
+    }
+
+    .menu-section.on  nav a{
+        font-size: clamp(1.2rem, 3vw, 1.75rem);
+    }
+    /* Fullscreen */
+}
+
+@media only screen and (max-width: 470px){
+    .card {
+        max-width: 95%;
+    }
+
+    .card-title h2 {
+        margin-bottom: 20px;
+    }
+
+    .card-image {
+        width: 80%;
+    }
+
+    #contato {
+        padding-bottom: 80px;
+    }
+
+    #formContato {
+        padding: 15px;
+
+        border-radius: 20px;
+    }
+
+    .footer-logo img{
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .footer-content-container {
+        padding-top: 40px;
+    }
+
+    .footer-logo {
+        align-items: center;
+    }
+}
+/* // Media Queries */
