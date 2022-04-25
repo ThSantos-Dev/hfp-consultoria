@@ -160,7 +160,7 @@ header nav a:hover {
     background-color: #0D56A9;
 }
 
-#btnContato:hover {
+#btnContato:hover, #btnSolicitarContato:hover {
     cursor: pointer;
 
     color: #0D56A9;
@@ -278,6 +278,11 @@ header nav a:hover {
     padding-top: 40px;
     padding-bottom: 120px;
 }
+
+#diferencias .card{
+    color: #fff;
+    background-color: rgb(5, 34, 67);
+}
 /* // Diferenciais */
 
 .cards-container {
@@ -356,7 +361,7 @@ header nav a:hover {
     max-width: 1000px;
 
     margin: auto;
-    padding: 44px 60px 20px 60px;
+    padding: 30px 50px 40px 50px;
 
     border: 1px solid rgba(5, 34, 67, 40%);
     border-radius: 50px;
@@ -378,7 +383,7 @@ header nav a:hover {
 }
 
 .form-container input {
-    height: 50px;
+    height: 30px;
 
     font-size: clamp(0.8rem, 2vw, 1.2rem);
     text-indent: 15px;
@@ -396,7 +401,6 @@ header nav a:hover {
     resize: none;
 
     padding: 20px;
-    margin-bottom: 25px;
 }
 
 .form-button {
@@ -404,7 +408,6 @@ header nav a:hover {
 
     display: flex;
     justify-content: flex-end;
-
 }
 
 #btnSolicitarContato {
@@ -412,7 +415,8 @@ header nav a:hover {
     text-transform: uppercase;  
     color: #ffffff;
     
-    padding: 18px 25px;
+    padding: 12px 12px;
+    cursor: pointer;
 
     border-radius: 10px;
     background-color:#0D56A9;
@@ -579,6 +583,7 @@ footer {
         width: 100%;
 
         margin: 6px auto;
+        user-select: none;
 
         background-color: #fff;
         transition-duration: 0.3s;
